@@ -22,6 +22,7 @@ public class Lab6PigLatin {
 		int vowelFirst;
 		char firstLetter;
 		String text; //whatever user inputs
+		String ext; // user input without first letter
 		String vow = "a,e,i,o,u";
 		String choice = "y";
 		
@@ -37,6 +38,14 @@ do	{ //initiate do-while loop
 		vowelFirst = vow.indexOf(firstLetter);//determines if first letter is a vowel
 		
 		boolean firstLetterVowel = (vowelFirst >= 0);//moves characters
+		ext = text.substring(0); //captures word without first letter - get it? ext
+		
+		if (firstLetterVowel) {
+			System.out.println(text + " " + "way");
+		}// end if
+		else {
+			
+		}//end else
 		System.out.println("Continue? y/n");
 		k.nextLine();
 		choice = k.nextLine();
