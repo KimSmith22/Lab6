@@ -28,7 +28,7 @@ public class Lab6PigLatin {
 		
 		System.out.println("Pig Latin Translator");
 		
-do	{ //initiate do-while loop		
+	do	{ //initiate do-while loop		
 		System.out.println("Enter text to translate: ");
 		Scanner k = new Scanner(System.in);
 		text = k.nextLine();
@@ -38,13 +38,13 @@ do	{ //initiate do-while loop
 		vowelFirst = vow.indexOf(firstLetter);//determines if first letter is a vowel
 		
 		boolean firstLetterVowel = (vowelFirst >= 0);//moves characters
-		ext = text.substring(0); //captures word without first letter - get it? ext
+		ext = text.substring(1); //captures word without first letter - get it?
 		
 		if (firstLetterVowel) {
-			System.out.println(text + " " + "way");
+			System.out.println(text + "way");
 		}// end if
 		else {
-			
+			System.out.println(ext + "ay");
 		}//end else
 		System.out.println("Continue? y/n");
 		k.nextLine();
