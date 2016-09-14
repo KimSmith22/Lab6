@@ -16,34 +16,14 @@ public class Lab6PigLatin {
 	 * @param strBuff 
 	 */
 	public static void main(String[] args) {
-		StringBuffer strBuff = new StringBuffer();
+		
+		String text; //whatever user inputs
+		String vow = "a,e,i,o,u";
+		
+		System.out.println("Pig Latin Translator");
 		Scanner k = new Scanner(System.in);
-
-		String add = "way";
-		String addVowel = "ay";
-		String choice = "y";
+		text = k.nextLine();
+		text = text.toLowerCase();/* method named to make all letters lower case */
 		
-		System.out.println("Translate to Pig Latin");
-		
-		//do{ // initiates do/while loop
-			
-		System.out.println("Enter a statement to translate: ");
-		String kInput = k.nextLine();
-		
-		strBuff.append(kInput);
-		
-		Lab6Methods.makeLowerCase(strBuff); //calling method to change to all lower case
-		//Lab6PigLatin.makePigLatin(strBuff); //calling method named makePigLatin
-		
-		StringBuffer output = Lab6Methods.makeLowerCase(strBuff);//reference pointer to other file in program
-		
-		System.out.println(output);
-		System.out.println("Continue? y/n");
-		k.nextLine();
-		choice = k.nextLine();
-		//}while(choice.equalsIgnoreCase("y")); //ends do/while loop
-		
-	}//psvm
-	
-	
-}//end class
+	}//end main method
+}//end public class Lab6PigLatin
